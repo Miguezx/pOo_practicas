@@ -1,3 +1,7 @@
+import javax.swing.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -5,8 +9,10 @@ public class Main {
 
         Alumno alu1 = new Alumno(); //creacion de objeto, y llamado al constructor
         Alumno alu2 = new Alumno(1723189369, "Maria", "Perez", 5);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //String nombre = JOptionPane.showInputDialog("Nombre :");
         alu1.setId(1724317183);
-        alu1.setNombre("Marcos");
+        alu1.setNombre(JOptionPane.showInputDialog("Nombre :"));
         alu1.setApellido("Inca");
         alu1.setCalificacion(7.5);
 
