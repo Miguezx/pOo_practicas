@@ -1,26 +1,65 @@
-import javax.swing.*;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        // Ejemplo de un ciclo for
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i: " + i);
+        }
 
-        Alumno alu1 = new Alumno(); //creacion de objeto, y llamado al constructor
-        Alumno alu2 = new Alumno(1723189369, "Maria", "Perez", 5);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        //String nombre = JOptionPane.showInputDialog("Nombre :");
-        alu1.setId(1724317183);
-        alu1.setNombre(JOptionPane.showInputDialog("Nombre :"));
-        alu1.setApellido("Inca");
-        alu1.setCalificacion(7.5);
+        // Ejemplo de un ciclo while
+        int i = 0;
+        while (i < 10) {
+            System.out.println("i: " + i);
+            i++;
+        }
 
-        alu1.mostrarInformacion();
-        alu2.mostrarInformacion();
+        // Ejemplo de un ciclo do-while
+        int i = 0;
+        do {
+            System.out.println("i: " + i);
+            i++;
+        } while (i < 10);
 
-        alu2.setId(35); //sobrescribir
+        // Ejemplo de condicional if-else
+        int x = 10;
+        if (x > 0) {
+            System.out.println("x es positivo");
+        } else if (x < 0) {
+            System.out.println("x es negativo");
+        } else {
+            System.out.println("x es cero");
+        }
 
-        alu2.mostrarInformacion();
+        // Ejemplo de condicional switch
+        int dia = 3;
+        switch (dia) {
+            case 1:
+                System.out.println("Lunes");
+                break;
+            case 2:
+                System.out.println("Martes");
+                break;
+            case 3:
+                System.out.println("Miércoles");
+                break;
+            case 4:
+                System.out.println("Jueves");
+                break;
+            case 5:
+                System.out.println("Viernes");
+                break;
+            case 6:
+                System.out.println("Sábado");
+                break;
+            case 7:
+                System.out.println("Domingo");
+                break;
+            default:
+                System.out.println("Día inválido");
+                break;
+        }
+
+
     }
 }
