@@ -1,10 +1,8 @@
 package miguel.abstraccionInterface.modelo;
 
-public class Informe extends Hoja{ //la herencia de una clase debe utilizar los metodos de la clase padre de acuerdo a la necesidad
+public class Informe extends Hoja {
     private String autor;
     private String revisor;
-
-
 
     public Informe(String contenido, String autor, String revisor) {
         super(contenido);
@@ -14,8 +12,8 @@ public class Informe extends Hoja{ //la herencia de una clase debe utilizar los 
 
     @Override
     public String imprimir() {
-        return "Informe escrito por: " + this.autor +
-                "Revisado por:  " + this.revisor +
-                "\n" + this.contenido;
+        return "Informe escrito por: " + this.autor + "\n" +
+                "Revisado por: " + this.revisor + "\n" +
+                this.contenido;
     }
 }

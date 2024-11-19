@@ -1,11 +1,11 @@
 package miguel.abstraccionInterface.modelo;
 
-abstract public class Hoja { //CLASE ABSTRACTRA
+public abstract class Hoja { // CLASE ABSTRACTA
     protected String contenido;
 
     public Hoja(String contenido) {
         this.contenido = contenido;
     }
 
-    abstract public String imprimir(); //este metodo no tiene cuerpo
+    public abstract String imprimir(); // Este método no tiene cuerpo
 }
